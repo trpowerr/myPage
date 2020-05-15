@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-symbols {
+  display: flex;
+  background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.left-site {
+  width: 75%;
+  margin: 20px;
+  clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
+}
+
+.scale {
+  display: inline-block; /* Строчно-блочный элемент */
+  overflow: hidden; /* Скрываем всё за контуром */
+
+ }
+ .scale img {
+  transition: 1s; /* Время эффекта */
+  display: block; /* Убираем небольшой отступ снизу */
+  height: 200px;
+  border: 5px solid #616161;
+ }
+ .scale img:hover {
+  transform: scale(2); /* Увеличиваем масштаб */
+ }
+
+ .right-site {
+  margin-left: auto;
+}
+
+.up-item{
+  width: 731px;
+}
+.up-item h1 {
+  font-size: 90px;
+  margin-top: 100px;
+  text-align: right;
+  color: white;
+  text-transform: uppercase;
+}
+
+.text-item {
+  margin-top: 100px;
+  margin-right: 50px;
+  background-color: #65a8e0d1;
+  clip-path: polygon(55% 0, 100% 0, 100% 48%, 100% 100%, 81% 100%, 49% 100%, 6% 100%, 0 55%, 0 47%, 0 0);
+}
+
+.text-item h2 {
+  color: white;
+  text-align: right;
+  padding-top: 70px;
+  padding-right: 25px;
+}
+
+.text-item p {
+  color: white;
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+.social div {
+  margin-left: 15px;
+}
+
