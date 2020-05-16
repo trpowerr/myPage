@@ -1,11 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 .main-symbols {
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
   display: flex;
   background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
@@ -85,15 +84,8 @@
   fill: #65a8e0;
 }
 
-/* .facebook .inst {
-  fill: #fff;
-}
-
-.facebook svg:hover {
-  fill: #65a8e0;
-} */
-
 .menu {
+  overflow-y: visible;
   position: fixed;
   right: -20%;top: 0;
   width: 20%;
@@ -122,11 +114,10 @@
   color: white;
   font-weight: 900;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .menu-list a:hover {
-  background-color: #65a8e0;
-  color: #000;
+  color: #65a8e0;
 }
 #menu-btn {
   position: absolute;
@@ -137,6 +128,7 @@
 .constacts {
   display: flex;
   flex-direction: column;
+  line-height: 36px;
   margin-bottom: 40px;
 }
 
