@@ -3,13 +3,18 @@
   padding: 0;
 }
 .main-symbols {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 }
+
 .left-site {
-  width: 75%;
+  width: 80%;
   margin: 20px;
   clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
+  max-height: 1080px;
 }
 
 .scale {
@@ -17,10 +22,11 @@
   overflow: hidden; /* Скрываем всё за контуром */
 
  }
+ 
  .scale img {
   transition: 1s; /* Время эффекта */
   display: block; /* Убираем небольшой отступ снизу */
-  height: 200px;
+  height: 130px;
   border: 5px solid #616161;
  }
  .scale img:hover {
@@ -33,6 +39,7 @@
 
 .up-item{
   width: 731px;
+  margin-right: 50px;
 }
 .up-item h1 {
   font-size: 90px;
@@ -54,6 +61,7 @@
   text-align: right;
   padding-top: 70px;
   padding-right: 25px;
+  padding-left: 25px;
 }
 
 .text-item p {
@@ -61,16 +69,79 @@
   text-align: right;
   padding-top: 30px;
   padding-right: 25px;
+  padding-left: 25px;
   padding-bottom: 50px;
 }
 
 .social {
   display: flex;
-  justify-content: right;
-  margin-right: 50px;
-  margin-top: 100px;
 }
 .social div {
   margin-left: 15px;
+  fill: #fff;
+}
+
+.social div:hover {
+  fill: #65a8e0;
+}
+
+/* .facebook .inst {
+  fill: #fff;
+}
+
+.facebook svg:hover {
+  fill: #65a8e0;
+} */
+
+.menu {
+  position: fixed;
+  right: -20%;top: 0;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  transition: 0.5s;
+  transform: translateX(0%);
+}
+.menu_active {
+  transform: translateX(-100%);
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+  margin-top: 50%;
+}
+.menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.menu-list a:hover {
+  background-color: #65a8e0;
+  color: #000;
+}
+#menu-btn {
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+
+.constacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.phone, .email {
+  color: white;
+  margin-bottom: 15px;
 }
 
